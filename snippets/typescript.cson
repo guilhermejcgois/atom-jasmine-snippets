@@ -1,0 +1,114 @@
+'.source.ts':
+  'Jasmine afterAll specs hook':
+    'prefix': 'afterAll'
+    'body': """
+      afterAll(() => {
+        ${1:callback}
+      });
+    """
+    'description': 'Run some shared teardown once after all of the specs in the describe are run.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#afterAll'
+  'Jasmine afterEach spec hook':
+    'prefix': 'afterEach'
+    'body': """
+      afterEach(() => {
+        ${1:callback}
+      });
+    """
+    'description': 'Run some shared teardown after each of the specs in the describe in which it is called.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#afterEach'
+  'Jasmine beforeAll specs hook':
+    'prefix': 'beforeAll'
+    'body': """
+      beforeAll(() => {
+        ${1:callback}
+      });
+    """
+    'description': 'Run some shared setup once before all of the specs in the describe are run.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#beforeAll'
+  'Jasmine beforeEach spec hook':
+    'prefix': 'beforeEach'
+    'body': """
+      beforeEach(() => {
+        ${1:callback}
+      });
+    """
+    'description': 'Run some shared setup before each of the specs in the describe in which it is called.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#beforeEach'
+  'Jasmine suite':
+    'prefix': 'describe'
+    'body': """
+      describe(${1:description}, () => {
+        ${2:specDefinitions}
+      });
+    """
+    'description': 'Create a group of specs (often called a suite).'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#describe'
+  'Jasmine expectation':
+    'prefix': 'expect'
+    'body': """
+      expect(${1:actual}).${2:matcher};
+    """
+    'leftLabel': 'matchers'
+    'description': 'Create an expectation for a spec.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#expect'
+  'Jasmine focused suite':
+    'prefix': 'fdescribe'
+    'body': """
+      fdescribe(${1:description}, () => {
+        ${2:specDefinitions}
+      });
+    """
+    'description': 'Create a group of focused specs (often called a suite).'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#fdescribe'
+  'Jasmine focused spec':
+    'prefix': 'fit'
+    'body': """
+      fit(${1:description}, () => {
+        ${2:testBody}
+      });
+    """
+    'description': 'Define a single focused spec.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#fit'
+  'Jasmine spec':
+    'prefix': 'it'
+    'body': """
+      it(${1:description}, () => {
+        ${2:testBody}
+      });
+    """
+    'description': 'Define a single spec.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#it'
+  'Jasmine pending spec':
+    'prefix': 'pend'
+    'body': """
+      pending(${1:message});
+    """
+    'description': 'Mark a spec as pending, expectation results will be ignored.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#pending'
+  'Jasmine spy instalation':
+    'prefix': 'spyOn'
+    'body': """
+      spyOn(${1:object}, ${2:methodName});
+    """
+    'description': 'Install a spy onto an existing object.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#spyOn'
+    'leftLabel': 'Spy'
+  'Jasmine excluded suite':
+    'prefix': 'xdescribe'
+    'body': """
+      xdescribe(${1:description}, () => {
+        ${2:specDefinitions}
+      });
+    """
+    'description': 'Create a group of excluded specs (often called a suite).'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#xdescribe'
+  'Jasmine excluded spec':
+    'prefix': 'xit'
+    'body': """
+      xit(${1:description}, () => {
+        ${2:testBody}
+      });
+    """
+    'description': 'Define a single excluded spec.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#xit'

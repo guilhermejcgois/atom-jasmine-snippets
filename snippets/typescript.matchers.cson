@@ -1,0 +1,134 @@
+'.source.ts':
+  'Jasmine expect nothing':
+    'prefix': 'exp-n'
+    'body': """
+      expect(${1}).nothing();
+    """
+    'description': 'Expect nothing explicitly.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#nothing'
+  'Jasmine expect value to be something':
+    'prefix': 'exp-tb'
+    'body': """
+      expect(${1:thing}).toBe(${2:realThing});
+    """
+    'description': 'Expect the actual value to be === to the expected value.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBe'
+  'Jasmine expect number to be close to some other number':
+    'prefix': 'exp-tbct'
+    'body': """
+      expect(${1:number}).toBeCloseTo(${2:expectedNumber});
+    """
+    'description': 'Expect the actual value to be within a specified precision of the expected value.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeCloseTo'
+  'Jasmine expect number to be close to some other number with given precision':
+    'prefix': 'exp-tbctp'
+    'body': """
+      expect(${1:number}).toBeCloseTo(${2:expectedNumber}, ${3:precision});
+    """
+    'description': 'Expect the actual value to be within a specified precision of the expected value.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeCloseTo'
+  'Jasmine expect a defined value':
+    'prefix': 'exp-tbd'
+    'body': """
+      expect(${1:result}).toBeDefined();
+    """
+    'description': 'Expect the actual value to be defined. (Not undefined)'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeDefined'
+  'Jasmine expect a falsy value':
+    'prefix': 'exp-tbf'
+    'body': """
+      expect(${1:result}).toBeFalsy();
+    """
+    'description': 'Expect the actual value to be falsy.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeFalsy'
+  'Jasmine expect greater value':
+    'prefix': 'exp-tbgt'
+    'body': """
+      expect(${1:result}).toBeGreaterThan(${2:limiar});
+    """
+    'description': 'Expect the actual value to be greater than the expected value.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeGreaterThan'
+  'Jasmine expect greater or equal value':
+    'prefix': 'exp-tbgtoe'
+    'body': """
+      expect(${1:result}).toBeGreaterThanOrEqual(${2:limiar});
+    """
+    'description': 'Expect the actual value to be greater than or equal to the expected value.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeGreaterThanOrEqual'
+  'Jasmine expect lesser value':
+    'prefix': 'exp-tblt'
+    'body': """
+      expect(${1:result}).toBeLessThan(${2:limiar});
+    """
+    'description': 'Expect the actual value to be lesser than the expected value.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeLessThan'
+  'Jasmine expect lesser or equal value':
+    'prefix': 'exp-tbltoe'
+    'body': """
+      expect(${1:result}).toBeLessThanOrEqual(${2:limiar});
+    """
+    'description': 'Expect the actual value to be lesser than or equal to the expected value.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeLessThanOrEqual'
+  'Jasmine not expect a number':
+    'prefix': 'exp-nan'
+    'body': """
+      expect(${1:thing}).toBeNaN();
+    """
+    'description': 'Expect the actual value to not be a number.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeNaN'
+  'Jasmine expect an negative infinity':
+    'prefix': 'exp-ninf'
+    'body': """
+      expect(${1:thing}).toBeNegativeInfinity();
+    """
+    'description': 'Expect the actual value to be -infinity.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeNegativeInfinity'
+  'Jasmine expect an null value':
+    'prefix': 'exp-null'
+    'body': """
+      expect(${1:thing}).toBeNull();
+    """
+    'description': 'Expect the actual value to be null.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeNull'
+  'Jasmine expect an positive infinity':
+    'prefix': 'exp-inf'
+    'body': """
+      expect(${1:thing}).toBePositiveInfinity();
+    """
+    'description': 'Expect the actual value to be infinity.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBePositiveInfinity'
+  'Jasmine expect a truthy value':
+    'prefix': 'exp-tbt'
+    'body': """
+      expect(${1:result}).toBeTruthy();
+    """
+    'description': 'Expect the actual value to be truthy.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeTruthy'
+  'Jasmine expect an undefined value':
+    'prefix': 'exp-tbud'
+    'body': """
+      expect(${1:result}).toBeUndefined();
+    """
+    'description': 'Expect the actual value to be undefined. (Not defined)'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toBeUndefined'
+  'Jasmine expect to contain something':
+    'prefix': 'exp-tc'
+    'body': """
+      expect(${1:result}).toContain(${2:searchFor});
+    """
+    'description': 'Expect the actual value to contain a specific value.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toContain'
+  'Jasmine expect to be deep equal to something':
+    'prefix': 'exp-teq'
+    'body': """
+      expect(${1:object}).toEqual(${2:realObject});
+    """
+    'description': 'Expect the actual value to be equal to the expected, using deep equality comparison.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toEqual'
+  'Jasmine expect to match to something':
+    'prefix': 'exp-tm'
+    'body': """
+      expect(${1:string}).toMatch(${2:regex});
+    """
+    'description': 'Expect the actual value to match a regular expression'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toMatch'
