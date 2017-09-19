@@ -1,13 +1,10 @@
 {
   "name": "atom-jasmine-snippets",
-  "main": "./lib/atom-jasmine-snippets",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "Jasmine snippets for Atom (https://atom.io/).",
   "keywords": [
+    "atom", "jasmine"
   ],
-  "activationCommands": {
-    "atom-workspace": "atom-jasmine-snippets:toggle"
-  },
   "repository": "https://github.com/atom/atom-jasmine-snippets",
   "license": "MIT",
   "engines": {
