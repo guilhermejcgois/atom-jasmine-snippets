@@ -5,7 +5,7 @@
   "keywords": [
     "atom", "jasmine"
   ],
-  "repository": "https://github.com/atom/atom-jasmine-snippets",
+  "repository": "https://github.com/guilhemejcgois/atom-jasmine-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
