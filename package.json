@@ -1,15 +1,15 @@
 {
-  "name": "atom-jasmine-snippets",
+  "name": "jasmine-snippets",
   "version": "0.0.1",
   "description": "Jasmine snippets for Atom (https://atom.io/).",
   "keywords": [
-    "atom", "jasmine"
+    "atom",
+    "jasmine"
   ],
-  "repository": "https://github.com/guilhemejcgois/atom-jasmine-snippets",
+  "repository": "https://github.com/guilhermejcgois/atom-jasmine-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
