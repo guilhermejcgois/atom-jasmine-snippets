@@ -1,0 +1,68 @@
+'.source.ts':
+  'Creates a jasmine spy without implementation':
+    'prefix': 'jasm-spy'
+    'body': """
+      ${1:variable} = createSpy(${2:name});
+    """
+    'description': 'Create a bare Spy object.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/jasmine.html#createSpy'
+    'leftLabel': 'Spy'
+  'Creates a jasmine spy with some implementation':
+    'prefix': 'jasm-spy'
+    'body': """
+      ${1:variable} = createSpy(${2:name}, ${3:implementation});
+    """
+    'description': 'Create a bare Spy object.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/jasmine.html#createSpy'
+    'leftLabel': 'Spy'
+  'Creates an object with a single jasmine spy':
+    'prefix': 'jasm-spyobj'
+    'body': """
+      ${1:variable} = createSpyObj(${2:baseName}, ${3:methodName});
+    """
+    'description': 'Create an object with a single Spy as it member.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/jasmine.html#createSpyObj'
+    'leftLabel': 'Object'
+  'Creates an object with multiple jasmine spys':
+    'prefix': 'jasm-spyobjs'
+    'body': """
+      ${1:variable} = createSpyObj(${2:baseName}, [${3:methodNames}]);
+    """
+    'description': 'Create an object with multiple Spys as its members.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/jasmine.html#createSpyObj'
+    'leftLabel': 'Object'
+  'Tell spy to call a fake implementation':
+    'prefix': 'jasm-fake'
+    'body': """
+      ${1:variable}.${2:methodName} = createSpy(${2:methodName}).and.callFake(${3:function});
+    """
+    'description': 'Tell the spy to call a fake implementation when invoked.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/Spy_and.html#callFake'
+  'Tell spy to call the real implementation':
+    'prefix': 'jasm-through'
+    'body': """
+      ${1:variable}.${2:methodName} = createSpy(${2:methodName}).and.callThrough();
+    """
+    'description': 'Tell the spy to call through to the real implementation when invoked.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/Spy_and.html#callThrough'
+  'Tell spy to return some value':
+    'prefix': 'jasm-retValue'
+    'body': """
+      ${1:variable}.${2:methodName} = createSpy(${2:methodName}).and.returnValue(${3:returnValue});
+    """
+    'description': 'Tell the spy to return the value when invoked.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/Spy_and.html#returnValue'
+  'Tell spy to return one of various value':
+    'prefix': 'jasm-retValues'
+    'body': """
+      ${1:variable}.${2:methodName} = createSpy(${2:methodName}).and.returnValues([${3:returnValues}]);
+    """
+    'description': 'Tell the spy to return one of the specified values (sequentially) each time the spy is invoked.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/Spy_and.html#returnValues'
+  'Tell spy to throw some error':
+    'prefix': 'jasm-error'
+    'body': """
+      ${1:variable}.${2:methodName} = createSpy(${2:methodName}).and.throwError([${3:error}]);
+    """
+    'description': 'Tell the spy to throw an error when invoked.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/Spy_and.html#throwError'

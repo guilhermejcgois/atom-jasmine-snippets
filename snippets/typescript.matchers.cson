@@ -125,6 +125,34 @@
     """
     'description': 'Expect the actual value to be equal to the expected, using deep equality comparison.'
     'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toEqual'
+  'Jasmine expect a spy to have been called':
+    'prefix': 'exp-thbc'
+    'body': """
+      expect(${1:spy}).toHaveBeenCalled();
+    """
+    'description': 'Expect the actual (a Spy) to have been called.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toHaveBeenCalled'
+  'Jasmine expect a spy to have been called before other spy':
+    'prefix': 'exp-thbcb'
+    'body': """
+      expect(${1:spy}).toHaveBeenCalledBefore(${2:otherSpy});
+    """
+    'description': 'Expect the actual (a Spy) to have been called before another Spy.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toHaveBeenCalledBefore'
+  'Jasmine expect a spy to have been called N times':
+    'prefix': 'exp-thbct'
+    'body': """
+      expect(${1:spy}).toHaveBeenCalledTimes(${2:n-times});
+    """
+    'description': 'Expect the actual (a Spy) to have been called the specified number of times.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toHaveBeenCalledTimes'
+  'Jasmine expect a spy to have been called with something':
+    'prefix': 'exp-thbcw'
+    'body': """
+      expect(${1:spy}).toHaveBeenCalledWith(${2:arguments});
+    """
+    'description': 'Expect the actual (a Spy) to have been called with particular arguments at least once.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/api/2.8/global.html#toHaveBeenCalledWith'
   'Jasmine expect to match to something':
     'prefix': 'exp-tm'
     'body': """
