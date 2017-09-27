@@ -8,6 +8,9 @@ Found some typo? Miss something else cool? Let me now or make a pull request!
 - [Install](#install)
 - [Supported languages](#supported-languages)
 - [Snippets](#snippets)
+  - [Custom](#custom)
+    - [custom_equality (.ts only)](#custom_equality-ts-only)
+    - [custom_matcher (.ts only)](#custom_matcher-ts-only)
   - [Globals](#globals)
     - [afterAll (.ts only)](#afterall-ts-only)
     - [afterEach (.ts only)](#aftereach-ts-only)
@@ -71,6 +74,48 @@ Found some typo? Miss something else cool? Let me now or make a pull request!
 # Snippets
 
 Below I list all the available snippet's prefix. I'm not will cover what they produces, 'cause will only be a copy-paste from .cson files.
+
+## Custom
+
+- JavaScript
+- Python
+- Ruby
+- [TypeScript](https://github.com/guilhermejcgois/atom-jasmine-snippets/blob/master/snippets/typescript.custom.cson)
+
+### custom_equality (.ts only)
+```
+var myCustomEquality = function(first, second) {
+  // return true or false if first and second are comparable,
+  // otherwise, doesn't return nothig.
+};
+
+beforeEach(function () {
+  jasmine.addCustomEqualityTester(myCustomEquality);
+});
+```
+
+### custom_matcher (.ts only)
+```
+var customMatchers = {
+  toBeCompared: function (util, curstomEqualityTester) {
+    return  {
+      compare: function (actual, expected) {
+        ...[negative]C[negative]C
+        var result = {};
+
+        // Assign result.pass to true or false, and result.message to some string
+
+        return result;
+      }
+    }
+  };
+  ...
+};
+
+beforeEach(function () {
+  jasmine.addCustomEqualityTester(customMatchers);
+});
+```
 
 ## Globals
 
