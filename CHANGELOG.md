@@ -1,3 +1,8 @@
+## 0.0.4 - Typescript custom equality and matcher
+* Custom typescript snippets
+  * custom_equality
+  * custom_matcher
+
 ## 0.0.3 - Typescript spys and documentation enhancements
 * Documentation
   * Improves README.md
