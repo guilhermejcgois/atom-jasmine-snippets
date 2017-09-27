@@ -1,0 +1,63 @@
+'.source.ts':
+  'Jasmine custom equality tester':
+    'prefix': 'customEqual'
+    'body': """
+      var ${1:myCustomEquality} = (${2:expected}, ${3:toBe}) => {
+        if (${4:check if can compare}) {
+          ${5:return }
+        }
+      };
+
+      beforeEach(() => {
+        jasmine.addCustomEqualityTester(${1:myCustomEquality});
+      });
+    """
+    'description': 'Add some custom equality tester to execute before default.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/edge/custom_equality.html'
+  'Jasmine custom matcher':
+    'prefix': 'customMatcher'
+    'body': """
+      var ${1:customMatcher} = {
+        ${2}
+      };
+
+      beforeEach(() => {
+        jasmine.addMatchers(${1:customMatcher});
+      });
+    """
+    'description': 'Add some custom matcher for jasmine.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/edge/custom_matcher.html'
+  'Jasmine matcher factory':
+    'prefix': 'matchFactory'
+    'body': """
+      ${1:matcher}: (util, customEqualityTester) => {
+        return {
+          ${2}
+        };
+      };
+    """
+    'description': 'Add some custom matcher factory for jasmine.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/edge/custom_matcher.html#section-Matcher_Factories'
+  'Jasmine matcher factory compare function':
+    'prefix': 'matchCmp'
+    'body': """
+      compare: (${1:actual}, ${2:expected}) => {
+        if (expected === undefined || expected === null) {
+          expected = ${'3:which default value'};
+        }
+
+        let result = {};
+
+        ${5:result.pass = utils.${6:equals}(${7:actual}, ${8:expected}, customEqualityTester);}
+
+        if (result.pass) {
+          ${4:result.message = };
+        } else {
+          ${4:result.message = };
+        }
+
+        return result;
+      }
+    """
+    'description': 'Create a custom matcher comparator.'
+    'descriptionMoreUrl': 'https://jasmine.github.io/edge/custom_matcher.html'
