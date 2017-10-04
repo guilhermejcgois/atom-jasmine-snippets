@@ -1,3 +1,9 @@
+## 0.1.0 - Add JavaScript support
+* Adds JavaScript snippets:
+  * for globals
+  * for matchers (and rename filename)
+  * for spys (and rename filename)
+
 ## 0.0.4 - Typescript custom equality and matcher
 * Custom typescript snippets
   * custom_equality
