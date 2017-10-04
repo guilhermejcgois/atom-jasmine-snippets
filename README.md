@@ -12,51 +12,51 @@ Found some typo? Miss something else cool? Let me now or make a pull request!
     - [custom_equality (.ts only)](#custom_equality-ts-only)
     - [custom_matcher (.ts only)](#custom_matcher-ts-only)
   - [Globals](#globals)
-    - [afterAll (.ts only)](#afterall-ts-only)
-    - [afterEach (.ts only)](#aftereach-ts-only)
-    - [beforeAll (.ts only)](#beforeall-ts-only)
-    - [beforeEach (.ts only)](#beforeeach-ts-only)
-    - [describe (.ts only)](#describe-ts-only)
-    - [expect (.ts only)](#expect-ts-only)
-    - [fdescribe (.ts only)](#fdescribe-ts-only)
-    - [fit (.ts only)](#fit-ts-only)
-    - [it (.ts only)](#it-ts-only)
-    - [pending (.ts only)](#pending-ts-only)
-    - [spyOn (.ts only)](#spyon-ts-only)
-    - [xdescribe (.ts only)](#xdescribe-ts-only)
-    - [xit (.ts only)](#xit-ts-only)
+    - [afterAll (.js and .ts only)](#afterall-ts-only)
+    - [afterEach (.js and .ts only)](#aftereach-ts-only)
+    - [beforeAll (.js and .ts only)](#beforeall-ts-only)
+    - [beforeEach (.js and .ts only)](#beforeeach-ts-only)
+    - [describe (.js and .ts only)](#describe-ts-only)
+    - [expect (.js and .ts only)](#expect-ts-only)
+    - [fdescribe (.js and .ts only)](#fdescribe-ts-only)
+    - [fit (.js and .ts only)](#fit-ts-only)
+    - [it (.js and .ts only)](#it-ts-only)
+    - [pending (.js and .ts only)](#pending-ts-only)
+    - [spyOn (.js and .ts only)](#spyon-ts-only)
+    - [xdescribe (.js and .ts only)](#xdescribe-ts-only)
+    - [xit (.js and .ts only)](#xit-ts-only)
   - [Matchers](#matchers)
-    - [nothing (.ts only)](#nothing-ts-only)
-    - [toBe (.ts only)](#tobe-ts-only)
-    - [toBeCloseTo (.ts only)](#tobecloseto-ts-only)
-    - [toBeCloseTo (with precision) (.ts only)](#tobecloseto-with-precision-ts-only)
-    - [toBeDefined (.ts only)](#tobedefined-ts-only)
-    - [toBeFalsy (.ts only)](#tobefalsy-ts-only)
-    - [toBeGreaterThan (.ts only)](#tobegreaterthan-ts-only)
-    - [toBeGreaterThanOrEqual (.ts only)](#tobegreaterthanorequal-ts-only)
-    - [toBeLessThan (.ts only)](#tobelessthan-ts-only)
-    - [toBeLessThanOrEqual (.ts only)](#tobelessthanorequal-ts-only)
-    - [toBeNan (.ts only)](#tobenan-ts-only)
-    - [toBeNegativeInfinity (.ts only)](#tobenegativeinfinity-ts-only)
-    - [toBeNull (.ts only)](#tobenull-ts-only)
-    - [toBePositiveInfinity (.ts only)](#tobepositiveinfinity-ts-only)
-    - [toBeTruthy (.ts only)](#tobetruthy-ts-only)
-    - [toBeUndefined (.ts only)](#tobeundefined-ts-only)
-    - [toContain (.ts only)](#tocontain-ts-only)
-    - [toEqual (.ts only)](#toequal-ts-only)
-    - [toHaveBeenCalled (.ts only)](#tohavebeencalled-ts-only)
-    - [toHaveBeenCalledBefore (.ts only)](#tohavebeencalledbefore-ts-only)
-    - [toHaveBeenCalledTimes (.ts only)](#tohavebeencalledtimes-ts-only)
-    - [toHaveBeenCalledWith (.ts only)](#tohavebeencalledwith-ts-only)
-    - [toMatch (.ts only)](#tomatch-ts-only)
+    - [nothing (.js and .ts only)](#nothing-ts-only)
+    - [toBe (.js and .ts only)](#tobe-ts-only)
+    - [toBeCloseTo (.js and .ts only)](#tobecloseto-ts-only)
+    - [toBeCloseTo (with precision) (.js and .ts only)](#tobecloseto-with-precision-ts-only)
+    - [toBeDefined (.js and .ts only)](#tobedefined-ts-only)
+    - [toBeFalsy (.js and .ts only)](#tobefalsy-ts-only)
+    - [toBeGreaterThan (.js and .ts only)](#tobegreaterthan-ts-only)
+    - [toBeGreaterThanOrEqual (.js and .ts only)](#tobegreaterthanorequal-ts-only)
+    - [toBeLessThan (.js and .ts only)](#tobelessthan-ts-only)
+    - [toBeLessThanOrEqual (.js and .ts only)](#tobelessthanorequal-ts-only)
+    - [toBeNan (.js and .ts only)](#tobenan-ts-only)
+    - [toBeNegativeInfinity (.js and .ts only)](#tobenegativeinfinity-ts-only)
+    - [toBeNull (.js and .ts only)](#tobenull-ts-only)
+    - [toBePositiveInfinity (.js and .ts only)](#tobepositiveinfinity-ts-only)
+    - [toBeTruthy (.js and .ts only)](#tobetruthy-ts-only)
+    - [toBeUndefined (.js and .ts only)](#tobeundefined-ts-only)
+    - [toContain (.js and .ts only)](#tocontain-ts-only)
+    - [toEqual (.js and .ts only)](#toequal-ts-only)
+    - [toHaveBeenCalled (.js and .ts only)](#tohavebeencalled-ts-only)
+    - [toHaveBeenCalledBefore (.js and .ts only)](#tohavebeencalledbefore-ts-only)
+    - [toHaveBeenCalledTimes (.js and .ts only)](#tohavebeencalledtimes-ts-only)
+    - [toHaveBeenCalledWith (.js and .ts only)](#tohavebeencalledwith-ts-only)
+    - [toMatch (.js and .ts only)](#tomatch-ts-only)
   - [Spys](#spys)
-    - [createSpy (.ts only)](#createspy-ts-only)
-    - [createSpyObj (.ts only)](#createspyobj-ts-only)
-    - [and.callFake (.ts only)](#andcallfake-ts-only)
-    - [and.callThrough (.ts only)](#andcallthrough-ts-only)
-    - [and.returnValue (.ts only)](#andreturnvalue-ts-only)
-    - [and.returnValues (.ts only)](#andreturnvalues-ts-only)
-    - [and.throwError (.ts only)](#andthrowerror-ts-only)
+    - [createSpy (.js and .ts only)](#createspy-ts-only)
+    - [createSpyObj (.js and .ts only)](#createspyobj-ts-only)
+    - [and.callFake (.js and .ts only)](#andcallfake-ts-only)
+    - [and.callThrough (.js and .ts only)](#andcallthrough-ts-only)
+    - [and.returnValue (.js and .ts only)](#andreturnvalue-ts-only)
+    - [and.returnValues (.js and .ts only)](#andreturnvalues-ts-only)
+    - [and.throwError (.js and .ts only)](#andthrowerror-ts-only)
 
 <!-- TOC END -->
 
@@ -66,7 +66,7 @@ Found some typo? Miss something else cool? Let me now or make a pull request!
 
 # Supported languages
 
-- [ ] JavaScript
+- [x] JavaScript
 - [ ] Python
 - [ ] Ruby
 - [x] TypeScript
@@ -119,237 +119,237 @@ beforeEach(function () {
 
 ## Globals
 
-- JavaScript
+- [JavaScript](https://github.com/guilhermejcgois/atom-jasmine-snippets/blob/master/snippets/JavaScript.cson)
 - Python
 - Ruby
 - [TypeScript](https://github.com/guilhermejcgois/atom-jasmine-snippets/blob/master/snippets/typescript.cson)
 
-### afterAll (.ts only)
+### afterAll (.js and .ts only)
 ```
 afterAll
 ```
 
-### afterEach (.ts only)
+### afterEach (.js and .ts only)
 ```
 afterEach
 ```
 
-### beforeAll (.ts only)
+### beforeAll (.js and .ts only)
 ```
 beforeAll
 ```
 
-### beforeEach (.ts only)
+### beforeEach (.js and .ts only)
 ```
 beforeEach
 ```
 
-### describe (.ts only)
+### describe (.js and .ts only)
 ```
 describe
 ```
 
-### expect (.ts only)
+### expect (.js and .ts only)
 ```
 expect
 ```
 
-### fdescribe (.ts only)
+### fdescribe (.js and .ts only)
 ```
 fdescribe
 ```
 
-### fit (.ts only)
+### fit (.js and .ts only)
 ```
 fit
 ```
 
-### it (.ts only)
+### it (.js and .ts only)
 ```
 it
 ```
 
-### pending (.ts only)
+### pending (.js and .ts only)
 ```
 pend
 ```
 
-### spyOn (.ts only)
+### spyOn (.js and .ts only)
 ```
 spyOn
 ```
 
-### xdescribe (.ts only)
+### xdescribe (.js and .ts only)
 ```
 xdescribe
 ```
 
-### xit (.ts only)
+### xit (.js and .ts only)
 ```
 xit
 ````
 
 ## Matchers
 
-- JavaScript
+- [JavaScript](https://github.com/guilhermejcgois/atom-jasmine-snippets/blob/master/snippets/matchers.cson)
 - Python
 - Ruby
-- [TypeScript](https://github.com/guilhermejcgois/atom-jasmine-snippets/blob/master/snippets/typescript.matchers.cson)
+- [TypeScript](https://github.com/guilhermejcgois/atom-jasmine-snippets/blob/master/snippets/matchers.cson)
 
-### nothing (.ts only)
+### nothing (.js and .ts only)
 ```
 exp-n
 ```
 
-### toBe (.ts only)
+### toBe (.js and .ts only)
 ```
 exp-tb
 ```
 
-### toBeCloseTo (.ts only)
+### toBeCloseTo (.js and .ts only)
 ```
 exp-tbct
 ```
 
-### toBeCloseTo (with precision) (.ts only)
+### toBeCloseTo (with precision) (.js and .ts only)
 ```
 exp-tbctp
 ```
 
-### toBeDefined (.ts only)
+### toBeDefined (.js and .ts only)
 ```
 exp-tbd
 ```
 
-### toBeFalsy (.ts only)
+### toBeFalsy (.js and .ts only)
 ```
 exp-tbf
 ```
 
-### toBeGreaterThan (.ts only)
+### toBeGreaterThan (.js and .ts only)
 ```
 exp-tbgt
 ```
 
-### toBeGreaterThanOrEqual (.ts only)
+### toBeGreaterThanOrEqual (.js and .ts only)
 ```
 exp-tbgtoe
 ```
 
-### toBeLessThan (.ts only)
+### toBeLessThan (.js and .ts only)
 ```
 exp-tblt
 ```
 
-### toBeLessThanOrEqual (.ts only)
+### toBeLessThanOrEqual (.js and .ts only)
 ```
 exp-tbltoe
 ```
 
-### toBeNan (.ts only)
+### toBeNan (.js and .ts only)
 ```
 exp-nan
 ```
 
-### toBeNegativeInfinity (.ts only)
+### toBeNegativeInfinity (.js and .ts only)
 ```
 exp-ninf
 ```
 
-### toBeNull (.ts only)
+### toBeNull (.js and .ts only)
 ```
 exp-null
 ```
 
-### toBePositiveInfinity (.ts only)
+### toBePositiveInfinity (.js and .ts only)
 ```
 exp-inf
 ```
 
-### toBeTruthy (.ts only)
+### toBeTruthy (.js and .ts only)
 ```
 exp-tbt
 ```
 
-### toBeUndefined (.ts only)
+### toBeUndefined (.js and .ts only)
 ```
 exp-tbud
 ```
 
-### toContain (.ts only)
+### toContain (.js and .ts only)
 ```
 exp-tc
 ```
 
-### toEqual (.ts only)
+### toEqual (.js and .ts only)
 ```
 exp-teq
 ```
 
-### toHaveBeenCalled (.ts only)
+### toHaveBeenCalled (.js and .ts only)
 ```
 exp-thbc
 ```
 
-### toHaveBeenCalledBefore (.ts only)
+### toHaveBeenCalledBefore (.js and .ts only)
 ```
 exp-thbcb
 ```
 
-### toHaveBeenCalledTimes (.ts only)
+### toHaveBeenCalledTimes (.js and .ts only)
 ```
 exp-thbct
 ```
 
-### toHaveBeenCalledWith (.ts only)
+### toHaveBeenCalledWith (.js and .ts only)
 ```
 exp-thbcw
 ```
 
-### toMatch (.ts only)
+### toMatch (.js and .ts only)
 ```
 exp-tm
 ```
 
 ## Spys
 
-- JavaScript
+- [JavaScript](https://github.com/guilhermejcgois/atom-jasmine-snippets/blob/master/snippets/spys.cson)
 - Python
 - Ruby
-- [TypeScript](https://github.com/guilhermejcgois/atom-jasmine-snippets/blob/master/snippets/typescript.spys.cson)
+- [TypeScript](https://github.com/guilhermejcgois/atom-jasmine-snippets/blob/master/snippets/spys.cson)
 
-### createSpy (.ts only)
+### createSpy (.js and .ts only)
 ```
 jasm-spy
 ```
 
-### createSpyObj (.ts only)
+### createSpyObj (.js and .ts only)
 ```
 jasm-spyobj  // for only one method
 jasm-spyobjs // for multiple methods
 ```
 
-### and.callFake (.ts only)
+### and.callFake (.js and .ts only)
 ```
 jasm-fake
 ```
 
-### and.callThrough (.ts only)
+### and.callThrough (.js and .ts only)
 ```
 jasm-through
 ```
 
-### and.returnValue (.ts only)
+### and.returnValue (.js and .ts only)
 ```
 jasm-retValue
 ```
 
-### and.returnValues (.ts only)
+### and.returnValues (.js and .ts only)
 ```
 jasm-retValues
 ```
 
-### and.throwError (.ts only)
+### and.throwError (.js and .ts only)
 ```
 jasm-error
 ```
