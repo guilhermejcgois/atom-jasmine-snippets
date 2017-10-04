@@ -1,4 +1,4 @@
-'.source.ts':
+'.source.js', '.source.ts':
   'Creates a jasmine spy without implementation':
     'prefix': 'jasm-spy'
     'body': """
