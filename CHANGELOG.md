@@ -1,3 +1,8 @@
+## 0.1.1 - Fix wrong scope selectors
+* Fixed wrong selectors on snippets files for:
+  * matchers
+  * spys
+
 ## 0.1.0 - Add JavaScript support
 * Adds JavaScript snippets:
   * for globals
